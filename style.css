@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+ height: 100%;
+ width: 100%;
+ background-image: url(./bgm.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+.head-container {
+ background-color: #656464;
+ height: 150px;
+ padding: 2rem 1rem;
+ margin: 0 auto;
+ text-align: center;
+  background-image: url(./ChatGPT\ Image\ May\ 30\,\ 2025\,\ 03_22_13\ PM.png); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.header-title {
+ font-size: 50px;
+ color: rgb(171, 148, 35);
+ font-weight: 700;
+}
+.header-para {
+ font-size: 25px;
+ color: aliceblue;
+}
+.parent-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2rem;
+ justify-content: center;
+ margin: 30px;
+}
+.card {
+ border: 3px dotted black;
+ display: flex;
+ flex-direction: column;
+ border-radius: 25px;
+ width: 400px;
+ align-items: center;
+ padding: 10px;
+ gap: 1rem;
+}
+.card-image {
+ object-fit: cover;
+ object-position: center;
+ /* position: absolute; */
+ height: 100%;
+ width: 100%;
+ border-radius: 25px;
+}
+.text-container {
+ display: flex;
+ flex-direction: column;
+ padding: 1rem;
+ gap: 1rem;
+}
+.text-container > h2 {
+ font-size: 50px;
+ color: rgb(23, 67, 132);
+ font-weight: 700;
+ line-height: 1.5rem;
+ margin-bottom: 0.3rem;
+}
+
+
+.card:hover .card-image {
+ transform: scale(1.1);
+ transition-duration: 200ms;
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8; /* Optional: to darken slightly for readability */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* dark transparent layer */
+  z-index: -1;
+}
+
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Dark overlay */
+  z-index: 0;
+}
+
+
+
+
+
